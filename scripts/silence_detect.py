@@ -10,8 +10,8 @@ import os
 
 def detect_active_segments(video_path: str, ffmpeg_path: str = "ffmpeg",
                             silence_threshold: float = -35.0,
-                            silence_duration: float = 0.4,
-                            padding: float = 0.05) -> list[dict]:
+                            silence_duration: float = 0.8,
+                            padding: float = 0.1) -> list[dict]:
     """
     Ejecuta ffmpeg silencedetect y retorna segmentos donde hay VOZ.
     padding: tiempo en segundos que se agrega antes y despues de cada segmento
